@@ -1,0 +1,130 @@
+/* SMK PPDB Custom Styles */
+
+.card-smk {
+    border: none;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    border-radius: 0.35rem;
+}
+
+.bg-smk-primary {
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+}
+
+.btn-smk {
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    color: white;
+    border: none;
+}
+
+.btn-smk:hover {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+}
+
+.text-gray-800 {
+    color: #5a5c69;
+}
+
+.text-gray-300 {
+    color: #dddfeb;
+}
+
+.text-xs {
+    font-size: 0.7rem;
+}
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e9ecef;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 0 0 30px 60px;
+    margin: 0;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 2px solid #e9ecef;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item.completed .timeline-marker {
+    background: #198754;
+    border-color: #198754;
+    color: white;
+}
+
+.timeline-item.current .timeline-marker {
+    background: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
+}
+
+.timeline-item.pending .timeline-marker {
+    background: #f8f9fa;
+    border-color: #dee2e6;
+    color: #6c757d;
+}
+
+.timeline-content {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.timeline-title {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #495057;
+}
+
+.timeline-desc {
+    margin: 0 0 10px 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.timeline-item.completed .timeline-content {
+    border-color: #198754;
+    background: #f8fff9;
+}
+
+.timeline-item.current .timeline-content {
+    border-color: #0d6efd;
+    background: #f8f9ff;
+}
+
+.timeline-item.pending .timeline-content {
+    background: #f8f9fa;
+    opacity: 0.7;
+}
